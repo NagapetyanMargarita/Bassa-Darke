@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+        <form action = "cgi-bin/neuron.py">
+           <div class="fon tab mt-4 mb-4 shadow rounded" id="quf">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">1. Временами я не могу справиться с желанием причинить вред другому.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_1" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_1" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">2. Иногда я сплетничаю о людях, которых не люблю.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_2" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_2" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">3. Я легко раздражаюсь, но быстро успокаиваюсь.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_3" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_3" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">4. Если меня не попросят по-хорошему, то я не выполню просьбу.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_4" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_4" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">5. Я не всегда получаю то, что мне положено.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_5" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_5" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">6. Я не знаю, что люди говорят обо мне за моей спиной.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_6" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_6" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">7. Если я не одобряю друзей, я даю им это почувствовать.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_7" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_7" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">8. Если мне случалось обмануть кого-нибудь, я испытывал
+мучительные угрызения совести.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_8" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_8" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">9. Мне кажется, что я не способен ударить человека.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_9" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_9" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">10. Я никогда не раздражаюсь настолько, чтобы кидаться
+предметами.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_10" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_10" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">11. Я всегда снисходителен к чужим недостаткам.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_11" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_11" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">12. Если мне не нравится установленное правило, мне хочется
+нарушить его.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_12" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_12" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">13. Другие умеют почти всегда пользоваться благоприятными
+обстоятельствами.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_13" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_13" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">14. Я держусь настороженно с людьми, которые относятся ко мне
+несколько более дружественно, чем я ожидал.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_14" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_14" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">15. Я часто бываю не согласен с людьми.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_15" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_15" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">16. Иногда мне на ум приходят мысли, которых я стыжусь.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_16" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_16" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">17. Если кто-нибудь первым ударит меня, я не отвечу ему.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_17" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_17" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">18. Когда я раздражаюсь, я хлопаю дверьми.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_18" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_18" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">19. Я гораздо более раздражен, чем кажется.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_19" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_19" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">20. Если кто-нибудь корчит из себя начальника, я всегда поступаю ему наперекор.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_20" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_20" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">21. Меня немного огорчает моя судьба.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_21" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_21" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">22. Я думаю, что многие люди не любят меня.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_22" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_22" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">23. Я не могу удержаться от спора, если люди не согласны со мной.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_23" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_23" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">24. Люди, увиливающие от работы, должны испытывать чувство вины.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_24" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_24" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">25. Тот, кто оскорбляет меня или мою семью, напрашивается на
+драку.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_25" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_25" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">26. Я не способен на грубые шутки.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_26" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_26" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">27. Меня охватывает ярость, когда надо мной насмехаются.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_27" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_27" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">28. Когда люди строят из себя начальников, я делаю все, чтобы они
+не зазнавались.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_28" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_28" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">29. Почти каждую неделю я вижу кого-нибудь, кто мне не нравится.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_29" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_29" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">30. Довольно многие люди завидуют мне.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_30" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_30" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">31. Я требую, чтобы люди уважали мои права.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_31" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_31" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">32. Меня угнетает, что я мало делаю для своих родителей.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_32" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_32" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">33. Люди, которые постоянно изводят вас, стоят, чтобы их
+щелкнули по носу.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_33" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_33" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">34. От злости я иногда бываю мрачен.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_34" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_34" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">35. Если ко мне относятся хуже, чем я того заслуживаю, я не
+огорчаюсь.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_35" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_35" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">36. Если кто-то выводит меня из себя, я не обращаю на него
+внимания.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_36" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_36" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">37. Хотя я и не показываю этого, иногда меня гложет зависть.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_37" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_37" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">38. Иногда мне кажется, что надо мной смеются.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_38" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_38" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">39. Даже если я злюсь, я не прибегаю к "сильным" выражениям.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_39" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_39" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">40. Мне хочется, чтобы мои грехи были прощены.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_40" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_40" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">41. Я редко даю сдачи, даже если кто-нибудь ударит меня.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_41" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_41" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">42. Когда получается не по-моему, я иногда обижаюсь.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_42" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_42" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">43. Иногда люди раздражают меня своим присутствием.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_43" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_43" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">44. Нет людей, которых бы я по-настоящему ненавидел.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_44" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_44" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">45. Мой принцип: «Никогда не доверять чужакам».</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_45" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_45" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">46. Если кто-нибудь раздражает меня, я готов сказать все, что я о нем думаю.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_46" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_46" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">47. Я делаю много такого, о чем впоследствии сожалею.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_47" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_47" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">48. Если я разозлюсь, я могу ударить кого-нибудь.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_48" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_48" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">49. С десяти лет я никогда не проявлял вспышек гнева.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_49" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_49" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">50. Я часто чувствую себя, как пороховая бочка, готовая взорваться.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_50" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_50" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">51. Если бы все знали, что я чувствую, меня бы считали человеком,
+с которым легко ладить.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_51" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_51" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">52. Я всегда думаю о том, какие тайные причины заставляют людей
+делать что-нибудь приятное для меня.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_52" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_52" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">53. Когда на меня кричат, я начинаю кричать в ответ.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_53" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_53" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">54. Неудачи огорчают меня.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_54" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_54" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">55. Я дерусь не реже и не чаще, чем другие.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_55" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_55" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">56. Я не могу вспомнить случая, когда я был настолько зол, что хватал
+попавшуюся под руку вещь и ломал ее.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_56" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_56" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">57. Иногда я чувствую, что готов первым начать драку.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_57" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_57" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">58. Иногда я чувствую, что жизнь поступает со мной несправедливо.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_58" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_58" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">59. Раньше я думал, что большинство людей говорит правду, но
+теперь я в это не верю.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_59" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_59" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">60. Я ругаюсь только со злости.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_60" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_60" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">61. Когда я поступаю неправильно, меня мучает совесть.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_61" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_61" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">62. Если для защиты своих прав мне надо применять физическую
+силу, я применяю ее.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_62" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_62" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">63. Иногда я выражаю свой гнев тем, что стучу по столу кулаком.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_63" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_63" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">64. Я бываю грубоват по отношению к людям, которые мне не
+нравятся.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_64" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_64" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">65. У меня нет врагов, которые хотели бы мне навредить.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_65" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_65" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">66. Я не умею поставить человека на место, даже если он того
+заслуживает.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_66" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_66" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">67. Я часто думаю, что жил неправильно.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_67" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_67" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">68. Я знаю людей, которые способны довести меня до драки.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_68" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_68" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">69. Я не огорчаюсь из-за мелочей.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_69" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_69" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">70. Мне редко приходит в голову, что люди пытаются разозлить или
+оскорбить меня.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_70" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_70" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">71. Я часто просто угрожаю людям, хотя и не собираюсь приводить
+угрозы в исполнение.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_71" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_71" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">72. В последнее время я стал занудой.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_72" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_72" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">73. В споре я часто повышаю голос.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_73" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_73" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">74. Я стараюсь скрывать плохое отношение к людям.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_74" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_74" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+               </div>
+           </div>
+
+            <div class="fon tab mt-4 mb-4 shadow rounded">
+               <div class="form-marg">
+                   <fieldset class="form-group formm">
+                       <legend style="color: black;">75. Я лучше соглашусь с чем-либо, чем стану спорить.</legend>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_75" value="1">
+                               Да</label>
+                       </div>
+                       <div class="form-check">
+                           <label class="form-check-label">
+                               <input type="radio" class="form-check-input" name="n_75" value="0">
+                               Нет</label>
+                       </div>
+                   </fieldset>
+                   <button type="submit" class="btn btn-success btn-md">Отправить</button>
+               </div>
+           </div>
+
+
+
+
+        </form>
+
+</body>
+</html>

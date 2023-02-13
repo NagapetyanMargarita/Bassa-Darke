@@ -1,0 +1,55 @@
+header{
+    background-color: #897f9eea;
+    color: #FFFFFF;
+    position: relative; 
+    margin: auto;
+    font-size: calc(1vw+0.7em);
+    }
+    
+    body{
+        background-color: #897f9eea;
+        background-size: cover;
+    }
+    a{
+        color: #0a021fea;
+    }
+    table{
+        border-collapse: collapse;
+        margin: 0px auto;
+        text-align: center;  
+    }
+    .fon{
+        margin: 0 auto;
+        padding: 0 auto;
+        background-color: #d6c1db;
+        border: 2px solid #000000;
+
+    }
+    .form-marg{
+        margin-left: 20%;
+    }
+    .formm {
+        margin-top: 15px;
+  margin-bottom: 25px;
+    }
+    .btn{
+        margin-left: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+    header h1{
+        font-style:italic;
+        font-size: 300%;
+      }
+  
+
+    @media screen and (min-width: 700px) and (orientation: landscape) {
+       header{
+        width: 60%;
+       }
+       .fon{
+        width: 60%; 
+        margin: auto;
+       }
+    }
